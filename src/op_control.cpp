@@ -28,7 +28,7 @@ void opControl() {
 
     intake.set_brake_mode(pros::E_MOTOR_BRAKE_COAST);
 
-    l1Press();
+
 
     // loop forever
     while (true) {
