@@ -5,5 +5,5 @@ Made using PROS
 - https://github.com/purduesigbots
 
 Used Templates:
-- LelLib https://github.com/LemLib/LemLib
+- LemLib https://github.com/LemLib/LemLib
 - StormLib https://github.com/ItzSt0rmz/StormLib
