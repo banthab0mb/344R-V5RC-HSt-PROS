@@ -1,4 +1,4 @@
-# 344R-HSt-LemLib
+# 344R V5RC High Stakes Code
 
 Made using PROS
 https://pros.cs.purdue.edu/
