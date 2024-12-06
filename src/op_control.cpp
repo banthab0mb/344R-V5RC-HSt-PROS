@@ -1,7 +1,8 @@
 #include "lemlib/api.hpp" // IWYU pragma: keep
-#include "pros/adi.h"
+// #include "pros/adi.h"
 #include "pros/adi.hpp"
 #include "pros/misc.h"
+#include "pros/misc.hpp"
 #include "pros/motors.h"
 #include "stormlib/api.hpp"
 #include "robot_config.h"
@@ -18,6 +19,16 @@
         }
     }
 
+    bool l2PressState;
+    void l2Press() {
+    l2PressState = !l2PressState;
+        if (l2PressState) {
+            cornerClearer.set_value(1);
+        } else {
+            cornerClearer.set_value(0);
+        }
+    }
+
 void opControl() {
     
 	strand1.rainbow(); // rainbow flows down strand
@@ -27,8 +38,6 @@ void opControl() {
 	LEDmanager.rainbow();
 
     intake.set_brake_mode(pros::E_MOTOR_BRAKE_COAST);
-
-
 
     // loop forever
     while (true) {
@@ -42,6 +51,11 @@ void opControl() {
         }
         if (!pros::E_CONTROLLER_DIGITAL_R1 && !pros::E_CONTROLLER_DIGITAL_R2) {
             intake.brake();
+        }
+
+        // Pneumatic controls
+        if(pros::E_CONTROLLER_DIGITAL_L1) {
+            l1Press();
         }
 
         // Driving control

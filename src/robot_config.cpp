@@ -86,3 +86,5 @@ lemlib::Chassis chassis(drivetrain, // drivetrain settings
 pros::Motor intake(-1, pros::MotorGears::blue);
 
 pros::adi::AnalogOut clamp(1);
+
+pros::adi::AnalogOut cornerClearer(2);
