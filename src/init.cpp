@@ -20,6 +20,4 @@ void start() {
 	//autonSelector.initialize();
  	LEDmanager.initialize();
 
-    // print logo to brain screen
-       
 }
