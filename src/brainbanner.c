@@ -3686,7 +3686,7 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BRAINBANN
     0xa9, 0xa0, 0x1a, 0xaa, 0x86, 0x5a, 0x17, 0x01, 0x01, 0x00, 0x3b
 };
 
-const lv_img_dsc_t brainbanneer = {
+const lv_img_dsc_t brainbanner = {
   .header.cf = LV_IMG_CF_RAW_CHROMA_KEYED,
   .header.always_zero = 0,
   .header.reserved = 0,

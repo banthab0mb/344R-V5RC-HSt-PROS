@@ -2,16 +2,16 @@
 #include "stormlib/api.hpp"
 #include "robot_config.h"
 #include "comp_init.h"
-lv_obj_t* brainbanner;
+lv_obj_t* image;
 
 void compInit() {
     autonSelector.initialize();
     
     // Print logo on brain
-    LV_IMG_DECLARE(Image);
-    brainbanner = lv_img_create(lv_scr_act());
-    lv_img_set_src(brainbanner, &Image);
-    lv_obj_set_size(brainbanner, 480, 272);
-    lv_obj_align(brainbanner, LV_ALIGN_CENTER, 0, 0);
+    LV_IMG_DECLARE(brainbanner);
+    image = lv_img_create(lv_scr_act());
+    lv_img_set_src(image, &brainbanner);
+    lv_obj_set_size(image, 480, 272);
+    lv_obj_align(image, LV_ALIGN_CENTER, 0, 0);
     
 }
