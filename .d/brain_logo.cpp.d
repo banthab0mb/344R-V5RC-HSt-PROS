@@ -1,12 +1,11 @@
-bin/comp_init.cpp.o: src/comp_init.cpp include/brain_logo.h \
- include/lemlib/api.hpp include/lemlib/pid.hpp include/lemlib/pose.hpp \
- include/lemlib/util.hpp include/lemlib/chassis/chassis.hpp \
- include/pros/rtos.hpp include/pros/rtos.h include/pros/imu.hpp \
- include/pros/device.hpp include/pros/misc.hpp include/pros/misc.h \
- include/pros/imu.h include/lemlib/asset.hpp \
- include/lemlib/chassis/trackingWheel.hpp include/pros/motors.hpp \
- include/pros/abstract_motor.hpp include/pros/motors.h \
- include/pros/rtos.hpp include/pros/motor_group.hpp \
+bin/brain_logo.cpp.o: src/brain_logo.cpp include/lemlib/api.hpp \
+ include/lemlib/pid.hpp include/lemlib/pose.hpp include/lemlib/util.hpp \
+ include/lemlib/chassis/chassis.hpp include/pros/rtos.hpp \
+ include/pros/rtos.h include/pros/imu.hpp include/pros/device.hpp \
+ include/pros/misc.hpp include/pros/misc.h include/pros/imu.h \
+ include/lemlib/asset.hpp include/lemlib/chassis/trackingWheel.hpp \
+ include/pros/motors.hpp include/pros/abstract_motor.hpp \
+ include/pros/motors.h include/pros/rtos.hpp include/pros/motor_group.hpp \
  include/pros/colors.hpp include/pros/adi.hpp include/pros/adi.h \
  include/pros/rotation.hpp include/pros/rotation.h \
  include/lemlib/exitcondition.hpp include/lemlib/driveCurve.hpp \
@@ -125,10 +124,9 @@ bin/comp_init.cpp.o: src/comp_init.cpp include/brain_logo.h \
  include/liblvgl/extra/widgets/colorwheel/lv_colorwheel.h \
  include/liblvgl/extra/widgets/led/lv_led.h \
  include/liblvgl/extra/widgets/imgbtn/lv_imgbtn.h \
- include/liblvgl/extra/widgets/span/lv_span.h include/stormlib/api.hpp \
- include/robot_config.h include/pros/adi.hpp include/pros/motors.hpp \
- include/comp_init.h
-include/brain_logo.h:
+ include/liblvgl/extra/widgets/span/lv_span.h include/robot_config.h \
+ include/pros/adi.hpp include/pros/motors.hpp include/stormlib/api.hpp \
+ include/brain_logo.h
 include/lemlib/api.hpp:
 include/lemlib/pid.hpp:
 include/lemlib/pose.hpp:
@@ -323,8 +321,8 @@ include/liblvgl/extra/widgets/colorwheel/lv_colorwheel.h:
 include/liblvgl/extra/widgets/led/lv_led.h:
 include/liblvgl/extra/widgets/imgbtn/lv_imgbtn.h:
 include/liblvgl/extra/widgets/span/lv_span.h:
-include/stormlib/api.hpp:
 include/robot_config.h:
 include/pros/adi.hpp:
 include/pros/motors.hpp:
-include/comp_init.h:
+include/stormlib/api.hpp:
+include/brain_logo.h:
