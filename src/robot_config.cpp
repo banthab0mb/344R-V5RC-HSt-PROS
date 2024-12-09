@@ -7,19 +7,23 @@
 
 #include "robot_config.h"
 
+// Controller
 pros::Controller controller(pros::E_CONTROLLER_MASTER);
 
+// LEDs
 stormlib::aRGB strand1(4, 41);
 stormlib::aRGB strand2(5, 41);
-
-stormlib::selector autonSelector(stormlib::selector::E_BLUE_RIGHT_4, "AWP",
-                                 "5Ring", "Goal Rush", "Disrupt");
 
 stormlib::aRGB_manager LEDmanager(&strand1, &strand2, nullptr, nullptr,
                                   nullptr, nullptr, nullptr, nullptr);
 
+// Auton selector
+stormlib::selector autonSelector(stormlib::selector::E_BLUE_RIGHT_4, "AWP",
+                                 "5Ring", "Goal Rush", "Disrupt");
+
 // left motor group
 pros::MotorGroup left_motor_group({-1, 2, -3}, pros::MotorGears::blue);
+
 // right motor group
 pros::MotorGroup right_motor_group({4, -5, 6}, pros::MotorGears::blue);
 
@@ -35,9 +39,9 @@ lemlib::Drivetrain drivetrain(&left_motor_group, // left motor group
 // imu
 pros::Imu imu(10);
 // horizontal tracking wheel encoder
-pros::Rotation horizontal_encoder(19);
+pros::Rotation horizontal_encoder(8);
 // vertical tracking wheel encoder
-pros::Rotation vertical_encoder(20);
+pros::Rotation vertical_encoder(9);
 // horizontal tracking wheel
 lemlib::TrackingWheel horizontal_tracking_wheel(&horizontal_encoder, lemlib::Omniwheel::NEW_275, -5.75);
 // vertical tracking wheel
@@ -82,9 +86,10 @@ lemlib::Chassis chassis(drivetrain, // drivetrain settings
                         sensors // odometry sensors
 );
 
+// Intake motor
+pros::Motor intake(7, pros::MotorGears::blue);
 
-pros::Motor intake(-1, pros::MotorGears::blue);
+// Pneumatics
+pros::adi::AnalogOut clamp(1); // Mogo clamp
 
-pros::adi::AnalogOut clamp(1);
-
-pros::adi::AnalogOut cornerClearer(2);
+pros::adi::AnalogOut cornerClearer(2); // Corner Clearer
