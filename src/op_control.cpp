@@ -53,8 +53,12 @@
             }
 
             // Pneumatic controls
-            if(pros::E_CONTROLLER_DIGITAL_L1) {
+            if(controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_L1)) {
                 l1Press();
+            }
+            
+            if(controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_L2)) {
+                l2Press();
             }
 
             // Driving control
