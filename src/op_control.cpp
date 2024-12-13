@@ -7,6 +7,7 @@
 #include "stormlib/api.hpp"
 #include "robot_config.h"
 #include "op_control.h"
+#include "brain_logo.h"
 
     bool l1PressState;
     void l1Press() {
@@ -29,6 +30,8 @@
     }
 
     void opControl() {
+
+        printLogo();
         
         strand1.rainbow(); // rainbow flows down strand
         strand2.flow(0x00FFFF,
@@ -56,7 +59,7 @@
             if(controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_L1)) {
                 l1Press();
             }
-            
+
             if(controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_L2)) {
                 l2Press();
             }

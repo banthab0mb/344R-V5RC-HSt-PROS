@@ -1,11 +1,10 @@
 #include "lemlib/api.hpp" // IWYU pragma: keep
 #include "stormlib/api.hpp"
-#include "robot_config.h"
+//#include "robot_config.h"
 #include "brain_logo.h"
 lv_obj_t* image;
 
 void printLogo() {
-    autonSelector.initialize();
     
     // Print logo on brain
     LV_IMG_DECLARE(brainbanner);

@@ -1,8 +1,10 @@
 #include "lemlib/api.hpp" // IWYU pragma: keep
+#include "pros/rtos.hpp"
 #include "stormlib/api.hpp"
 #include "robot_config.h"
 #include "init.h"
 #include "pros/llemu.hpp"
+#include "brain_logo.h"
 
 /**
  * Runs initialization code. This occurs as soon as the program is started.
@@ -14,10 +16,15 @@
 // BASICALLY PRE-AUTONOMOUS
 
 void start() {
-    pros::lcd::initialize(); // initialize brain screen
+    pros::delay(100);
+    
+    pros::lcd::clear();
+
     chassis.calibrate(); // calibrate sensors
 
-	//autonSelector.initialize();
+    printLogo();
+
+	autonSelector.initialize();
  	LEDmanager.initialize();
 
 }

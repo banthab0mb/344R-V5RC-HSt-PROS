@@ -75,11 +75,11 @@
             "-funwind-tables",
             "--std=gnu++20",
             "-o",
-            "bin/op_control.cpp.o",
-            "src\\op_control.cpp"
+            "bin/comp_init.cpp.o",
+            "src\\comp_init.cpp"
         ],
         "directory": "C:\\Users\\banth\\OneDrive\\Documents\\344R",
-        "file": "src\\op_control.cpp"
+        "file": "src\\comp_init.cpp"
     },
     {
         "arguments": [
@@ -116,11 +116,11 @@
             "-funwind-tables",
             "--std=gnu++20",
             "-o",
-            "bin/auton.cpp.o",
-            "src\\auton.cpp"
+            "bin/brain_logo.cpp.o",
+            "src\\brain_logo.cpp"
         ],
         "directory": "C:\\Users\\banth\\OneDrive\\Documents\\344R",
-        "file": "src\\auton.cpp"
+        "file": "src\\brain_logo.cpp"
     },
     {
         "arguments": [
@@ -198,47 +198,6 @@
             "-funwind-tables",
             "--std=gnu++20",
             "-o",
-            "bin/robot_config.cpp.o",
-            "src\\robot_config.cpp"
-        ],
-        "directory": "C:\\Users\\banth\\OneDrive\\Documents\\344R",
-        "file": "src\\robot_config.cpp"
-    },
-    {
-        "arguments": [
-            "clang++",
-            "-c",
-            "-target",
-            "armv7ar-none-none-eabi",
-            "-fno-ms-extensions",
-            "-fno-ms-compatibility",
-            "-fno-delayed-template-parsing",
-            "-isystemc:\\users\\banth\\appdata\\roaming\\code\\user\\globalstorage\\sigbots.pros\\install\\pros-toolchain-windows\\usr\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1",
-            "-isystemc:\\users\\banth\\appdata\\roaming\\code\\user\\globalstorage\\sigbots.pros\\install\\pros-toolchain-windows\\usr\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7-a+simd/softfp",
-            "-isystemc:\\users\\banth\\appdata\\roaming\\code\\user\\globalstorage\\sigbots.pros\\install\\pros-toolchain-windows\\usr\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward",
-            "-isystemc:\\users\\banth\\appdata\\roaming\\code\\user\\globalstorage\\sigbots.pros\\install\\pros-toolchain-windows\\usr\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include",
-            "-isystemc:\\users\\banth\\appdata\\roaming\\code\\user\\globalstorage\\sigbots.pros\\install\\pros-toolchain-windows\\usr\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed",
-            "-isystemc:\\users\\banth\\appdata\\roaming\\code\\user\\globalstorage\\sigbots.pros\\install\\pros-toolchain-windows\\usr\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include",
-            "-iquote./include",
-            "-iquote./include/./",
-            "-mcpu=cortex-a9",
-            "-mfpu=neon-fp16",
-            "-mfloat-abi=softfp",
-            "-Os",
-            "-g",
-            "-D_POSIX_THREADS",
-            "-D_UNIX98_THREAD_MUTEX_ATTRIBUTES",
-            "-D_POSIX_TIMERS",
-            "-D_POSIX_MONOTONIC_CLOCK",
-            "-D_PROS_INCLUDE_LIBLVGL_LLEMU_H",
-            "-D_PROS_INCLUDE_LIBLVGL_LLEMU_HPP",
-            "-Wno-psabi",
-            "-ffunction-sections",
-            "-fdata-sections",
-            "-fdiagnostics-color",
-            "-funwind-tables",
-            "--std=gnu++20",
-            "-o",
             "bin/main.cpp.o",
             "src\\main.cpp"
         ],
@@ -280,11 +239,11 @@
             "-funwind-tables",
             "--std=gnu++20",
             "-o",
-            "bin/comp_init.cpp.o",
-            "src\\comp_init.cpp"
+            "bin/robot_config.cpp.o",
+            "src\\robot_config.cpp"
         ],
         "directory": "C:\\Users\\banth\\OneDrive\\Documents\\344R",
-        "file": "src\\comp_init.cpp"
+        "file": "src\\robot_config.cpp"
     },
     {
         "arguments": [
@@ -362,10 +321,51 @@
             "-funwind-tables",
             "--std=gnu++20",
             "-o",
-            "bin/logo.cpp.o",
-            "src\\logo.cpp"
+            "bin/auton.cpp.o",
+            "src\\auton.cpp"
         ],
         "directory": "C:\\Users\\banth\\OneDrive\\Documents\\344R",
-        "file": "src\\logo.cpp"
+        "file": "src\\auton.cpp"
+    },
+    {
+        "arguments": [
+            "clang++",
+            "-c",
+            "-target",
+            "armv7ar-none-none-eabi",
+            "-fno-ms-extensions",
+            "-fno-ms-compatibility",
+            "-fno-delayed-template-parsing",
+            "-isystemc:\\users\\banth\\appdata\\roaming\\code\\user\\globalstorage\\sigbots.pros\\install\\pros-toolchain-windows\\usr\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1",
+            "-isystemc:\\users\\banth\\appdata\\roaming\\code\\user\\globalstorage\\sigbots.pros\\install\\pros-toolchain-windows\\usr\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7-a+simd/softfp",
+            "-isystemc:\\users\\banth\\appdata\\roaming\\code\\user\\globalstorage\\sigbots.pros\\install\\pros-toolchain-windows\\usr\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward",
+            "-isystemc:\\users\\banth\\appdata\\roaming\\code\\user\\globalstorage\\sigbots.pros\\install\\pros-toolchain-windows\\usr\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include",
+            "-isystemc:\\users\\banth\\appdata\\roaming\\code\\user\\globalstorage\\sigbots.pros\\install\\pros-toolchain-windows\\usr\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed",
+            "-isystemc:\\users\\banth\\appdata\\roaming\\code\\user\\globalstorage\\sigbots.pros\\install\\pros-toolchain-windows\\usr\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include",
+            "-iquote./include",
+            "-iquote./include/./",
+            "-mcpu=cortex-a9",
+            "-mfpu=neon-fp16",
+            "-mfloat-abi=softfp",
+            "-Os",
+            "-g",
+            "-D_POSIX_THREADS",
+            "-D_UNIX98_THREAD_MUTEX_ATTRIBUTES",
+            "-D_POSIX_TIMERS",
+            "-D_POSIX_MONOTONIC_CLOCK",
+            "-D_PROS_INCLUDE_LIBLVGL_LLEMU_H",
+            "-D_PROS_INCLUDE_LIBLVGL_LLEMU_HPP",
+            "-Wno-psabi",
+            "-ffunction-sections",
+            "-fdata-sections",
+            "-fdiagnostics-color",
+            "-funwind-tables",
+            "--std=gnu++20",
+            "-o",
+            "bin/op_control.cpp.o",
+            "src\\op_control.cpp"
+        ],
+        "directory": "C:\\Users\\banth\\OneDrive\\Documents\\344R",
+        "file": "src\\op_control.cpp"
     }
 ]
